@@ -1,0 +1,33 @@
+<div class ="new_post">
+	<h2>Create Post</h2>
+
+	<%=render “form_fields”, information: "hello world" %>
+
+
+	<%# disregard this bunch of code, was just trying something out
+
+	<%= form_for(:blog_post, :url => {:action => 'create'}) do |f| %>
+
+	<%# <table summary="BlogPost form fields">
+		<tr>
+			<th>Name</th>
+			<td><%= f.text_field(:name) %><%# </td>
+		<%# </tr>
+		<tr>
+			<th>Position</th>
+			<td><%= f.text_field(:position) %><%# </td>
+		<%# </tr>
+		<%# <tr>
+			<th>Visible</th>
+			<td><%= f.text_field(:visible) %><%# </td>
+		<%# </tr>
+	</table>
+
+	<div class="form-buttons">
+		<%= submit_tag("Create Blog_Post") %>
+
+	<%#	<% end %>
+	<%#</div>
+
+
+	
